@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <style>* { margin: 0;
+padding: 0;
+box-sizing: border-box; 
+font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color: linear-gradient(0deg , transparent , rgb(184,184,184,.2))
+}
+
+body {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 100%;
+     background-image: url('images.jpg'); background-size: cover /cover no-repeat;
+     background: #1f2025;
+    
+}
+
+{
+    header  position: absolute;
+     top: 20px;
+     left: 20px; 
+     z-index: 10;
+    padding: 0 10px;
+
+}
+
+header .logo img {
+    width: 100%;
+
+}
+
+
+
+.form-box {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-details h2 { 
+font-size: 24px;
+ margin-bottom: 10px;}
+
+ .form-details p { 
+  font-size: 14px; color: #666;
+  margin-bottom: 20px;}
+
+
+  .form-content h2 {
+ font-size: 20px;
+  margin-bottom: 20px;
+  }
+
+
+ 
+.login .form-details {
+
+    color: #ffffffd7;
+    margin-top: -29px;
+    padding: 0 22px;
+    background: url("imges.jpg");
+    box-shadow: 0px 0px 20px #fd6565;
+    background-position: align;
+    background-size: cover;
+}
+
+.input-field { 
+position: relative;
+margin-bottom: 30px;
+ } 
+ 
+ .input-field input {
+ width: 100%; padding: 10px;
+  border: 1px solid #ccc;
+   border-radius: 5px;
+    background: #f9f9f9;
+     transition: background 0.3s; 
+    } 
+    
+    .input-field label {
+        position: absolute; 
+        top: 50%;
+    left: 10px;
+     transform: translateY(-50%); 
+     font-size: 16px;
+     color: #ffffffe4; ; transition:
+     
+     top 0.3s, font-size 0.3s; 
+    } 
+    
+    
+    .input-field input:focus, 
+    .input-field input:valid
+     {
+     
+     background: linear-gradient(0deg , transparent, #1f2025);
+    }
+    
+    .input-field input:focus + label,
+    .input-field input:valid + label 
+    { 
+    top: -10px;
+    font-size: 12px;
+ } 
+ 
+ .forgot-pass-link
+  { 
+ display: block;
+ margin-bottom: 20px; 
+ text-decoration: none;
+ box-shadow: 0px 0px 50px rgba(184, 184, 184, 0.51);
+ color: #000; transition: color 0.3s; 
+ border: 2px solid #fd6565;
+ font-size: 18px;
+ color: #ffffffd7;
+ background: none;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s linear;
+
+
+
+} 
+.forgot-pass-link:hover
+ { 
+    color:#fd6565;
+    background: #fff;
+ } 
+ 
+ button[type="submit"] 
+ { 
+background-color:#fff;; 
+color: white; 
+padding: 10px; 
+border: none;
+ border-radius: 5px;
+  cursor: pointer;
+   font-size: 16px; 
+   transition: background 0.3s; }
+   
+   
+   button[type="submit"]:hover
+    { 
+    background-color: rgba(184, 184, 184, 0.395);
+    color: #fff; 
+}  
+
+.bottom-link { 
+font-size: 14px;
+} 
+
+.bottom-link a {
+    color: #fff; 
+    background: rgb(184, 184, 184, .1); 
+ text-decoration: none;
+ transition: color 0.3s; }
+ 
+ .bottom-link a:hover 
+ { 
+    color: #fff;
+ }</style>
+</head>
+<body>
+    <header>
+        
+            <a href="#" class="logo">
+                <img src="images.jpg" alt="logo">
+              
+            </a>
+    
+
+    </header>
+    
+        
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="l" method="post">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="signup.html" id="register">Registration form</a>
+                </div>
+
+</body>
+</html>

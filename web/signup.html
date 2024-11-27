@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">  
+  <head>  
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="registerform.css">
+
+    <title>Register</title> 
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color: linear-gradient(0deg , transparent , rgb(184,184,184,.2));
+}
+
+body {  
+  font-family: Arial, Helvetica, sans-serif;  
+  background-size:cover:
+  background- repeat: no-repeat;
+  background-position:center;
+   background: #1f2025;
+   display: flex;
+    justify-content: center; 
+    align-items: center;
+     width: 100vw;
+     height: 100vh; 
+     margin: 0;
+
+}  
+
+form {  
+    background-color: rgba(255, 255, 255, 0.8);
+ padding: 20px;
+  border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    width: 100%;
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+  
+.container {  
+  display: flex;  
+  flex-direction: column;  
+  width: 25vw;  
+}  
+  
+form h1
+ {  
+     font-size: 24px; 
+     margin-bottom: 20px;
+  text-align: center;  
+}  
+
+form p { 
+font-size: 14px; margin-bottom: 10px; 
+}
+  
+form label { 
+font-weight: bold;
+ margin-bottom: 5px;
+  display: block;
+}
+/* desired spacing for input fields */  
+input {  
+    form input[type="text"], 
+    form input[type="password"] 
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+      border-radius: 5px; 
+      box-sizing: border-box;
+
+}  
+
+form button[type="submit"] {
+    background-color: #4CAF50;
+     color: white; 
+     padding: 10px; 
+     border: none;
+     border-radius: 5px; 
+     cursor: pointer;
+     font-size: 16px;
+
+
+}
+form button[type="submit"]:hover {
+ background-color: #45a049;
+}
+
+form a { 
+color: #009688;
+ text-decoration: none;
+}
+
+form a:hover { 
+text-decoration: underline
+}</style>
+  </head>   
+  <body style="background-image: url('2.jpg');">
+  <form action="s" method="post">  
+    <div>  
+      <h1>Register</h1>  
+      <p> Fill out the form to register.</p>  
+      <!-- label for firstname -->  
+      <label for= "first name" ><b> first name </b></label>   
+      <!-- input field for firstname -->  
+      <input  
+        type="text"  
+        placeholder="firstname"  
+        name="fn"   
+        id="firstname"  
+        required  
+    
+      />  
+      <!-- label for lastname -->  
+      <label for="last name"> <b> last name</b></label>   
+      <!-- input field for lastname -->  
+      <input  
+        type="text"  
+        placeholder="last name"  
+        name="lastname"  
+        id="lastname"  
+        required  
+    
+      />  
+      <!-- label for username -->  
+      <label for="username"><b>Username</b></label>   
+      <!-- input field for username -->  
+      <input  
+        type="text"  
+        placeholder="Enter username."  
+        name="username"  
+        id="username"  
+        required  
+    
+      />  
+      <!-- label and input for email -->  
+      <label for="email"><b>Email</b></label>  
+      <input  
+        type="text"  
+        placeholder="Enter Email"  
+        name="email"  
+        id="email"  
+        required  
+      />  
+     
+      <!-- label and input for  phone number -->  
+      <label for=" phone number"><b>phone  number</b></label>  
+      <input  
+        type=" phone number"  
+        placeholder="number"  
+        name=" number"  
+        id="number"  
+        required  
+      />  
+      <!-- label and input for password -->  
+      <label for="pwd"><b>Password</b></label>  
+      <input  
+        type="password"  
+        placeholder="Enter Password"  
+        name="pwd"  
+        id="pwd"  
+        required  
+      />  
+      <label for="pwd-repeat"><b>Repeat Password</b></label>  
+      <input  
+        type="password"  
+        placeholder="Repeat Password"  
+        name="rpwd"  
+        id="pwd-repeat"  
+        required  
+      />   
+       <!-- submit button -->  
+       <button type="submit">Register</button> 
+    </div>  
+    <div> <p>Already have an account? <a href="login.html">Log in</a>.</p> </div>  
+  </form>  
+
+</html>
